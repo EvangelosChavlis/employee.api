@@ -13,7 +13,7 @@ public class EmployeesController : BaseController
 
     [Route("{id}")]
     [HttpGet]
-    public async Task<IActionResult> GetEmployeeById(string id) 
+    public async Task<IActionResult> GetEmployeeById(Guid id) 
         => Ok(await  _employeesService.GetEmployeeByIdAsync(id));
     
 
@@ -24,12 +24,12 @@ public class EmployeesController : BaseController
 
     [Route("{id}")]
     [HttpPut]
-    public async Task<IActionResult> UpdateEmployee(string id, [FromBody] EmployeeDto dto)
+    public async Task<IActionResult> UpdateEmployee(Guid id, [FromBody] EmployeeDto dto)
         => Ok(await  _employeesService.UpdateEmployeeAsync(id, dto));
 
 
     [Route("{id}")]
     [HttpDelete]
-    public async Task<IActionResult> DeleteEmployee(string id)
+    public async Task<IActionResult> DeleteEmployee(Guid id)
         => Ok(await  _employeesService.DeleteEmployeeAsync(id));
 }

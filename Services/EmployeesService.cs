@@ -24,7 +24,7 @@ public class EmployeesService : IEmployeesService
     
     }
 
-    public async Task<Employee> GetEmployeeByIdAsync(string id)
+    public async Task<Employee> GetEmployeeByIdAsync(Guid id)
     {
         var employee = await _context.Employees
             .Where(x => x.Id == id)
@@ -53,7 +53,7 @@ public class EmployeesService : IEmployeesService
         return res ? "Employee successfully created" : "Error in employee creation";
     } 
 
-    public async Task<string> UpdateEmployeeAsync(string id, EmployeeDto dto)
+    public async Task<string> UpdateEmployeeAsync(Guid id, EmployeeDto dto)
     {
         var employee = await _context.Employees.Where(x => x.Id == id).FirstOrDefaultAsync();
 
@@ -73,7 +73,7 @@ public class EmployeesService : IEmployeesService
     }
 
 
-    public async Task<string> DeleteEmployeeAsync(string id)
+    public async Task<string> DeleteEmployeeAsync(Guid id)
     {
         var employee = await _context.Employees
             .Where(x => x.Id == id)

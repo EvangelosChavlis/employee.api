@@ -15,7 +15,7 @@ public class DataSeeder
             {
                 new Employee
                 {
-                    Id = Guid.NewGuid().ToString(),
+                    Id = Guid.NewGuid(),
                     FirstName = "Evangelos",
                     LastName = "Chavlis",
                     Address = "somewhere 123, City",
@@ -24,7 +24,7 @@ public class DataSeeder
                 },
                 new Employee
                 {
-                    Id = Guid.NewGuid().ToString(),
+                    Id = Guid.NewGuid(),
                     FirstName = "Gerasimos",
                     LastName = "Tzivras",
                     Address = "somewhere 1234, City",
@@ -33,7 +33,7 @@ public class DataSeeder
                 },
                 new Employee
                 {
-                    Id = Guid.NewGuid().ToString(),
+                    Id = Guid.NewGuid(),
                     FirstName = "Panagiotis",
                     LastName = "Georgiou",
                     Address = "somewhere 12, City",
@@ -42,7 +42,7 @@ public class DataSeeder
                 },
                 new Employee
                 {
-                    Id = Guid.NewGuid().ToString(),
+                    Id = Guid.NewGuid(),
                     FirstName = "Thanasis",
                     LastName = "Georgiou",
                     Address = "somewhere 12, City",
@@ -51,7 +51,7 @@ public class DataSeeder
                 },
                 new Employee
                 {
-                    Id = Guid.NewGuid().ToString(),
+                    Id = Guid.NewGuid(),
                     FirstName = "Dimitris",
                     LastName = "Georgiou",
                     Address = "somewhere 12, City",
@@ -60,7 +60,7 @@ public class DataSeeder
                 },
                 new Employee
                 {
-                    Id = Guid.NewGuid().ToString(),
+                    Id = Guid.NewGuid(),
                     FirstName = "Dimitris",
                     LastName = "Athanasiou",
                     Address = "somewhere 12, City",
@@ -69,7 +69,7 @@ public class DataSeeder
                 },
                 new Employee
                 {
-                    Id = Guid.NewGuid().ToString(),
+                    Id = Guid.NewGuid(),
                     FirstName = "Kostas",
                     LastName = "Agapiou",
                     Address = "somewhere 178, City",
